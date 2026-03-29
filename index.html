@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Device Diagnostic</title>
-    <meta name="description" content="Сайт програми Device Diagnostic для моніторингу системи, тесту мережі, диска та експорту діагностики.">
+    <meta name="description" content="Device Diagnostic website for system monitoring, network and disk testing, and diagnostic export.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -16,32 +16,32 @@
             <nav class="topbar">
                 <a class="brand" href="#top">Device Diagnostic</a>
                 <div class="nav-links">
-                    <a href="#features">Можливості</a>
-                    <a href="#download">Завантаження</a>
-                    <a href="#guide">Запуск</a>
+                    <a href="#features">Features</a>
+                    <a href="#download">Download</a>
+                    <a href="#guide">Guide</a>
                 </div>
             </nav>
 
             <div class="hero-grid" id="top">
                 <div class="hero-copy">
                     <span class="eyebrow">Windows diagnostic utility</span>
-                    <h1>Один інтерфейс для швидкої перевірки стану комп'ютера</h1>
+                    <h1>One interface for quick computer status checks</h1>
                     <p class="lead">
-                        Device Diagnostic показує системну інформацію, графіки навантаження CPU, RAM і GPU,
-                        запускає мережевий та дисковий тести і дозволяє експортувати результати в JSON.
-                        Тепер програму можна скачати як готовий Windows <span class="mono">.exe</span>, а не як сирий Python-код.
+                        Device Diagnostic shows system information, CPU, RAM, and GPU load graphs,
+                        runs network and disk tests, and allows exporting results to JSON.
+                        Now the program can be downloaded as a ready-to-use Windows <span class="mono">.exe</span>, instead of raw Python code.
                     </p>
 
                     <div class="hero-actions">
-                        <a class="button button-primary" href="DeviceDiagnostic.exe" download>Скачати .exe</a>
-                        <a class="button button-secondary" href="DeviceDiagnostic-win64.zip" download>Скачати ZIP</a>
-                        <a class="button button-secondary" href="#guide">Як запустити</a>
+                        <a class="button button-primary" href="DeviceDiagnostic.exe" download>Download .exe</a>
+                        <a class="button button-secondary" href="DeviceDiagnostic-win64.zip" download>Download ZIP</a>
+                        <a class="button button-secondary" href="#guide">How to run</a>
                     </div>
 
                     <ul class="hero-points">
-                        <li>Живий моніторинг продуктивності</li>
-                        <li>Тест інтернету та накопичувача</li>
-                        <li>Експорт результатів у JSON</li>
+                        <li>Live performance monitoring</li>
+                        <li>Network and disk testing</li>
+                        <li>Export results to JSON</li>
                     </ul>
                 </div>
 
@@ -56,22 +56,22 @@
                             <article class="metric-card accent-green">
                                 <p>CPU cores</p>
                                 <strong>Realtime</strong>
-                                <span>Графіки по кожному ядру</span>
+                                <span>Graphs for each core</span>
                             </article>
                             <article class="metric-card accent-cyan">
                                 <p>GPU</p>
                                 <strong>Load / VRAM / Temp</strong>
-                                <span>Підтримка моніторингу відеокарти</span>
+                                <span>GPU monitoring support</span>
                             </article>
                             <article class="metric-card accent-orange">
                                 <p>Network</p>
                                 <strong>Ping, DL, UL</strong>
-                                <span>Швидкий тест швидкості мережі</span>
+                                <span>Quick network speed test</span>
                             </article>
                             <article class="metric-card accent-pink">
                                 <p>Export</p>
                                 <strong>diagnostic.json</strong>
-                                <span>Збереження ключових показників</span>
+                                <span>Save key metrics</span>
                             </article>
                         </div>
                     </div>
@@ -82,89 +82,89 @@
         <main>
             <section class="section" id="features">
                 <div class="section-heading">
-                    <span class="eyebrow">Що вміє програма</span>
-                    <h2>Основні можливості</h2>
+                    <span class="eyebrow">What the program can do</span>
+                    <h2>Main Features</h2>
                 </div>
 
                 <div class="feature-grid">
                     <article class="feature-card">
-                        <h3>Система</h3>
-                        <p>Показує ОС, кількість ядер процесора, обсяг оперативної пам'яті та інформацію про GPU.</p>
+                        <h3>System</h3>
+                        <p>Shows OS, CPU cores, RAM size, and GPU information.</p>
                     </article>
                     <article class="feature-card">
-                        <h3>Продуктивність</h3>
-                        <p>Оновлює графіки завантаження CPU, RAM, GPU, VRAM і температури у майже реальному часі.</p>
+                        <h3>Performance</h3>
+                        <p>Updates CPU, RAM, GPU, VRAM, and temperature graphs in near real-time.</p>
                     </article>
                     <article class="feature-card">
-                        <h3>Мережа</h3>
-                        <p>Запускає speed test і показує ping, швидкість завантаження та віддачі.</p>
+                        <h3>Network</h3>
+                        <p>Runs a speed test and shows ping, download, and upload speeds.</p>
                     </article>
                     <article class="feature-card">
-                        <h3>Накопичувач</h3>
-                        <p>Виконує базовий тест запису та читання тимчасового файлу, щоб оцінити швидкість диска.</p>
+                        <h3>Storage</h3>
+                        <p>Performs a basic read and write test on a temporary file to assess disk speed.</p>
                     </article>
                     <article class="feature-card">
-                        <h3>Експорт</h3>
-                        <p>Зберігає короткий діагностичний звіт у файл JSON для подальшого використання.</p>
+                        <h3>Export</h3>
+                        <p>Saves a short diagnostic report to a JSON file for further use.</p>
                     </article>
                     <article class="feature-card">
-                        <h3>Інтерфейс</h3>
-                        <p>Темна техно-стилістика з акцентами, зручною для локальної утиліти моніторингу.</p>
+                        <h3>Interface</h3>
+                        <p>Dark techno-style interface with accents, convenient for a local monitoring utility.</p>
                     </article>
                 </div>
             </section>
 
             <section class="section section-highlight" id="download">
                 <div class="download-copy">
-                    <span class="eyebrow">Завантаження</span>
-                    <h2>Отримай готову Windows-програму</h2>
+                    <span class="eyebrow">Download</span>
+                    <h2>Get the ready-to-use Windows program</h2>
                     <p>
-                        Основний варіант це готовий файл
+                        The main option is the ready-to-use file
                         <span class="mono">DeviceDiagnostic.exe</span>.
-                        Якщо браузер або хостинг обмежує завантаження <span class="mono">.exe</span>, можна використати ZIP-архів.
+                        If your browser or hosting restricts downloading <span class="mono">.exe</span> files, you can use the ZIP archive.
                     </p>
                 </div>
 
                 <div class="download-card">
-                    <p class="download-label">Файл</p>
+                    <p class="download-label">File</p>
                     <strong>DeviceDiagnostic.exe</strong>
-                    <a class="button button-primary wide" href="DeviceDiagnostic.exe" download>Скачати зараз</a>
-                    <a class="button button-secondary wide" href="DeviceDiagnostic-win64.zip" download>Скачати ZIP-архів</a>
-                    <p class="download-note">Python і встановлення бібліотек користувачу вже не потрібні.</p>
+                    <a class="button button-primary wide" href="DeviceDiagnostic.exe" download>Download Now</a>
+                    <a class="button button-secondary wide" href="DeviceDiagnostic-win64.zip" download>Download ZIP Archive</a>
+                    <p class="download-note">Python and library installation are no longer required for the user.</p>
                 </div>
             </section>
 
             <section class="section" id="guide">
                 <div class="section-heading">
-                    <span class="eyebrow">Швидкий старт</span>
-                    <h2>Як запустити готову програму</h2>
+                    <span class="eyebrow">Quick Start</span>
+                    <h2>How to run the ready-to-use program</h2>
                 </div>
 
                 <div class="guide-grid">
                     <div class="guide-steps">
                         <article>
                             <span>01</span>
-                            <p>Скачай <span class="mono">DeviceDiagnostic.exe</span> або ZIP-архів.</p>
+                            <p>Download <span class="mono">DeviceDiagnostic.exe</span> or the ZIP archive.</p>
                         </article>
                         <article>
                             <span>02</span>
-                            <p>Якщо скачав ZIP, розпакуй його у зручну папку.</p>
+                            <p>If you downloaded the ZIP, extract it to a convenient folder.</p>
                         </article>
                         <article>
                             <span>03</span>
-                            <p>Запусти файл подвійним кліком у Windows.</p>
+                            <p>Run the file by double-clicking it in Windows.</p>
                         </article>
                         <article>
                             <span>04</span>
-                            <p>Якщо SmartScreen попереджає, вибери <span class="mono">More info</span> і дозволь запуск.</p>
+                            <p>If SmartScreen warns you, select <span class="mono">More info</span> and allow the run.</p>
                         </article>
                     </div>
 
                     <div class="terminal-card">
-                        <p class="terminal-title">Файли для роздачі</p>
+                        <p class="terminal-title">Files for distribution</p>
                         <pre id="install-command">DeviceDiagnostic.exe
 DeviceDiagnostic-win64.zip</pre>
-                        <button class="button button-secondary wide" id="copy-button" type="button">Копіювати назви файлів</button>
+                        <button class="button button-secondary wide" id="copy-button" type="button">Copy file names</button>
                     </div>
                 </div>
             </section>
@@ -172,7 +172,7 @@ DeviceDiagnostic-win64.zip</pre>
 
         <footer class="footer">
             <p>Device Diagnostic <span id="year"></span></p>
-            <p>Сторінка створена для презентації та швидкого завантаження готової Windows-програми.</p>
+            <p>This page is created for presenting and quickly downloading the ready-to-use Windows program.</p>
         </footer>
     </div>
 
